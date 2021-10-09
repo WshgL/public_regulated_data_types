@@ -1,4 +1,4 @@
-int16 field_mgauss[3] # in milliGauss
+int16[3] field_mgauss # in milliGauss
 
 uint3 instance
 
