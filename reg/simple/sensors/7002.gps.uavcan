@@ -1,0 +1,22 @@
+uint3         instance
+
+uint8         constellation         # Bitfield. GPS, GLONASS, BEIDOU, GALILEO, SBAS,
+uint8         num_sats              # needed for pre-arm
+uint3         fix-type              # Enum. No-Fix, Dead-Reckon,2D-Fix, 3D-Fix, GNSS + Dead-Reckon, Time-Only, 3D+SBAS
+uint3         mode                  # Enum. Single, Dead-Reckon only, DGPS_Other, DGPS_SBAS, RTK-Float, RTK-Fixed, PPP, Other/Unknown
+
+uint32        time_week_ms
+uint16        time_week
+
+int36         latitude              # in 1e-8 degrees, ~mm resolution
+int36         longitude             # in 1e-8 degrees, ~mm resolution
+float32       altitude              # not sure we need mm resolution from earth to the satellite noting vertical accuracy
+float16       yaw                   # centidegrees
+float32[3]    velocity[3]           # not sure we need this level of fidelity.  float16 perhaps?
+
+uint16        hdop
+uint16        vdop                  # is this used?
+float16       horizontal_accuracy
+float16       vertical_accuracy
+float16       yaw_accuracy
+float16       speed_accuracy
