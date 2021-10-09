@@ -1,0 +1,6 @@
+float32 pressure         # Pa
+int16   temperature_cdeg # centidegrees C
+
+uint3 instance
+
+@extent 7 * 8  # Single-frame transfer over CAN classic.

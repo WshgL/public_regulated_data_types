@@ -1,0 +1,9 @@
+float32 delta_angle[3]       # radians
+float32 delta_velocity[3]    # m/s
+
+uint16 delta_angle_dt        # delta angle (gyroscope) integration time in microseconds
+uint16 delta_velocity_dt     # delta velocity (accelerometer) integration time in microseconds
+
+uint3 instance
+
+@extent 63 * 8               # Single-frame transfer over CAN FD.

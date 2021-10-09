@@ -1,7 +1,0 @@
-uint3 instance
-
-int16 delta_angle[3]
-int16 delta_velocity[3]
-
-uint16 delta_angle_dt        # integration time in microseconds
-uint16 delta_velocity_dt

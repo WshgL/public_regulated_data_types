@@ -1,0 +1,5 @@
+int16 field_mgauss[3] # in milliGauss
+
+uint3 instance
+
+@extent 7 * 8  # Single-frame transfer over CAN classic.

@@ -1,3 +1,0 @@
-uint3 instance
-
-int16 field_mgauss[3] # in milliGauss

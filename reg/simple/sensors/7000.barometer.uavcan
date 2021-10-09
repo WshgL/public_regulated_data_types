@@ -1,4 +1,0 @@
-uint3 instance
-
-float32 pressure # Pa
-int16   temperature_cdeg # centidegrees C

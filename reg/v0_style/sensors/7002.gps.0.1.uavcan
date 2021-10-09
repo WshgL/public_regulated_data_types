@@ -1,5 +1,3 @@
-uint3         instance
-
 uint8         constellation         # Bitfield. GPS, GLONASS, BEIDOU, GALILEO, SBAS,
 uint8         num_sats              # needed for pre-arm
 uint3         fix-type              # Enum. No-Fix, Dead-Reckon,2D-Fix, 3D-Fix, GNSS + Dead-Reckon, Time-Only, 3D+SBAS
@@ -20,3 +18,7 @@ float16       horizontal_accuracy
 float16       vertical_accuracy
 float16       yaw_accuracy
 float16       speed_accuracy
+
+uint3         instance
+
+@extent 63 * 8  # Single-frame transfer over CAN FD.
