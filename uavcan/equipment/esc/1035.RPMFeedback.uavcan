@@ -1,0 +1,6 @@
+#
+# RPM feedback.
+#
+
+int18 rpm                   # Negative value indicates reverse rotation
+uint5 esc_index
